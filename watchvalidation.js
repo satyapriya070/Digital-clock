@@ -5,7 +5,7 @@ function DigitalClock(){
     let second=date.getSeconds();
 
     document.getElementById("template").innerHTML=
-    `${hour}: ${minutes}:${second}`;
+    `${hour}: ${minutes}:${second} ${h> 12 ? "PM" : "AM"}`;
 }
 
 setInterval(()=>{
